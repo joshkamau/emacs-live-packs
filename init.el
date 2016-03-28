@@ -30,3 +30,13 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+(live-add-pack-lib "company-mode")
+(require 'company)
+
+(live-add-pack-lib "emacs-elixir")
+(require 'elixir-mode)
+(require 'elixir-smie)
+
+(live-add-pack-lib "alchemist")
+(require 'alchemist)
